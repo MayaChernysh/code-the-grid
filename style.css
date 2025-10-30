@@ -158,7 +158,7 @@ header nav a:hover {
 .modules-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 3rem;
   justify-items: start;
 }
 
@@ -166,8 +166,8 @@ header nav a:hover {
 .module-card {
   background-color: #f8f8f8;
   border-radius: 15px;
-  width: 320px;
-  height: 500px;
+  width: 640px; /* doubled width */
+  height: 1000px; /* doubled height */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -183,11 +183,11 @@ header nav a:hover {
 
 .difficulty {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  top: 15px;
+  left: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
   font-weight: bold;
   color: white;
 }
@@ -198,66 +198,68 @@ header nav a:hover {
 
 .card-number {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   background-color: white;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .card-content {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .card-content h3 {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-subheading {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: grey;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .f1-comparison {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #ff2800;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-progress {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-progress .progress-label {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: grey;
+  margin-bottom: 0.3rem;
 }
 
 .card-progress .progress-bar {
   width: 100%;
-  height: 10px;
-  border-radius: 6px;
+  height: 20px;
+  border-radius: 10px;
   background-color: #ccc;
 }
 
 .card-progress .progress-fill {
   height: 100%;
   background-color: #ff2800;
-  border-radius: 6px 0 0 6px;
+  border-radius: 10px 0 0 10px;
 }
 
 .start-button-small {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 20px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 25px;
   background-color: #ff2800;
   color: white;
   border: none;
