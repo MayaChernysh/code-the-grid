@@ -156,21 +156,22 @@ header nav a:hover {
 }
 
 .modules-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  justify-items: start;
 }
 
 /* CARD STYLING */
 .module-card {
   background-color: #f8f8f8;
   border-radius: 15px;
-  width: 300px;
+  width: 320px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card-image {
@@ -191,9 +192,9 @@ header nav a:hover {
   color: white;
 }
 
-.rookie { background-color: #FFD700; } /* yellow */
-.pro { background-color: #1E90FF; } /* blue */
-.champion { background-color: #FF0000; } /* red */
+.rookie { background-color: #FFD700; }
+.pro { background-color: #1E90FF; }
+.champion { background-color: #FF0000; }
 
 .card-number {
   position: absolute;
@@ -230,7 +231,6 @@ header nav a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* small progress bar inside card */
 .card-progress {
   margin-bottom: 0.5rem;
 }
@@ -254,7 +254,6 @@ header nav a:hover {
   border-radius: 6px 0 0 6px;
 }
 
-/* Small start button */
 .start-button-small {
   padding: 0.5rem 1rem;
   font-size: 1rem;
