@@ -264,6 +264,7 @@ header nav a:hover {
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 1.5rem;  /* adjust the value to get the spacing you like */
 }
 
 .start-button-small:hover {
