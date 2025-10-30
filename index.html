@@ -4,32 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Code the Grid</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-    <h1>🏎️ Code the Grid</h1>
-    <p>Learn to code, understand the science, and explore Formula 1.</p>
+    <div class="header-left">
+      <h1>Code the Grid</h1>
+    </div>
+    <nav class="header-center">
+      <a href="learn.html">Code</a>
+      <a href="science.html">Science</a>
+      <a href="news.html">News</a>
+    </nav>
+    <div class="header-right">
+      <div class="progress-container">
+        <span class="progress-label">Learning progress</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 45%;"></div>
+        </div>
+        <span class="progress-percentage">45%</span>
+      </div>
+      <button class="account-button">My Account</button>
+    </div>
   </header>
 
-  <main>
-    <section id="intro">
-      <h2>Welcome!</h2>
-      <p>We're building a space where Python meets pit stops, and coding meets the speed of Formula 1.</p>
-    </section>
-
-    <section id="links">
-      <h2>Explore</h2>
-      <ul>
-        <li><a href="learn.html">Learn to Code</a></li>
-        <li><a href="science.html">Science of Speed</a></li>
-        <li><a href="news.html">F1 News & Insights</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Code the Grid | Created by Maya Chernysh</p>
-  </footer>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Pace to Python Mastery</h2>
+      <p>
+        Learn Python through the precision and speed of Formula 1<br>
+        racing. Master variables like telemetry, loops like laps and<br>
+        functions like pit strategies
+      </p>
+      <button class="start-button">START RACING &gt;</button>
+    </div>
+  </section>
 </body>
 </html>
