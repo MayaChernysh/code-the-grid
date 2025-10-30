@@ -110,7 +110,7 @@ header {
   position: relative;
   max-width: 700px;
   color: white;
-  margin-left: 15%; /* moves text slightly left of center */
+  margin-left: 15%;
 }
 
 .hero-content h2 {
@@ -139,3 +139,27 @@ header {
 .start-button:hover {
   background-color: #e61e00;
 }
+
+/* LEARNING MODULES */
+.learning-modules {
+  padding: 6rem 5%;
+  background-color: #fff;
+}
+
+.modules-header h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.modules-subheading {
+  font-size: 1.6rem;
+  color: grey;
+  margin-bottom: 3rem;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem
