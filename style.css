@@ -167,7 +167,7 @@ header nav a:hover {
   background-color: #f8f8f8;
   border-radius: 15px;
   width: 640px; /* doubled width */
-  height: 1000px; /* doubled height */
+  height: 850px; /* doubled height */
   display: flex;
   flex-direction: column;
   overflow: hidden;
