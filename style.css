@@ -12,28 +12,28 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
+  height: 60px;
 }
 
 header h1 {
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: black;
 }
 
 nav.header-center a {
   font-weight: bold;
   color: black;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 nav.header-center a:hover {
   text-decoration: underline;
 }
 
-/* PROGRESS BAR AND BUTTONS */
 .header-right {
   display: flex;
   align-items: center;
@@ -49,27 +49,27 @@ nav.header-center a:hover {
 .progress-label {
   font-weight: bold;
   color: grey;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .progress-bar {
-  width: 120px;
-  height: 12px;
+  width: 150px;
+  height: 14px;
   background-color: #ccc;
-  border-radius: 6px;
+  border-radius: 7px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
   background-color: #ff2800; /* Ferrari red */
-  border-radius: 6px 0 0 6px;
+  border-radius: 7px 0 0 7px;
 }
 
 .progress-percentage {
   font-weight: bold;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .account-button {
@@ -88,11 +88,11 @@ nav.header-center a:hover {
 /* HERO SECTION */
 .hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   background: url('https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/trackside-images/2024/F1_Grand_Prix_of_China/2149496458.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 .hero-overlay {
@@ -101,35 +101,35 @@ nav.header-center a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); /* black transparent overlay */
+  background-color: rgba(0,0,0,0.6); /* darker overlay so text pops */
 }
 
 .hero-content {
   position: relative;
-  max-width: 600px;
+  max-width: 700px;
   color: white;
 }
 
 .hero-content h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   margin-bottom: 2rem;
 }
 
 .start-button {
-  padding: 0.8rem 2rem;
+  padding: 1rem 2.5rem;
   background-color: #ff2800;
   border: none;
   color: white;
   font-weight: bold;
-  border-radius: 25px;
-  font-size: 1rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
