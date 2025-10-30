@@ -1,4 +1,4 @@
-/* GENERAL RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,28 +9,29 @@
 /* HEADER */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
-  padding: 0.5rem 2rem;
   height: 60px;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ccc;
 }
 
-header h1 {
-  font-weight: 900;
+.header-left h1 {
   font-size: 2rem;
+  font-weight: 900;
   color: black;
 }
 
-nav.header-center a {
-  font-weight: bold;
-  color: black;
+.header-center a {
   margin: 0 1.5rem;
-  text-decoration: none;
+  font-weight: bold;
   font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
 }
 
-nav.header-center a:hover {
+.header-center a:hover {
   text-decoration: underline;
 }
 
@@ -40,6 +41,7 @@ nav.header-center a:hover {
   gap: 1rem;
 }
 
+/* PROGRESS BAR */
 .progress-container {
   display: flex;
   align-items: center;
@@ -47,23 +49,24 @@ nav.header-center a:hover {
 }
 
 .progress-label {
+  font-size: 1.2rem;
   font-weight: bold;
   color: grey;
-  font-size: 1.2rem;
 }
 
 .progress-bar {
-  width: 150px;
-  height: 14px;
+  width: 160px;
+  height: 16px;
   background-color: #ccc;
-  border-radius: 7px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background-color: #ff2800; /* Ferrari red */
-  border-radius: 7px 0 0 7px;
+  width: 45%;
+  background-color: #ff2800;
+  border-radius: 8px 0 0 8px;
 }
 
 .progress-percentage {
@@ -73,7 +76,7 @@ nav.header-center a:hover {
 }
 
 .account-button {
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border: none;
   background-color: #222;
   color: white;
@@ -85,14 +88,13 @@ nav.header-center a:hover {
   background-color: #444;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   position: relative;
-  height: 85vh;
+  height: 90vh;
   background: url('https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/trackside-images/2024/F1_Grand_Prix_of_China/2149496458.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding-left: 10%;
 }
 
 .hero-overlay {
@@ -101,35 +103,36 @@ nav.header-center a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6); /* darker overlay so text pops */
+  background-color: rgba(0,0,0,0.65);
 }
 
 .hero-content {
   position: relative;
   max-width: 700px;
   color: white;
+  margin-left: 15%; /* moves text slightly left of center */
 }
 
 .hero-content h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 1.8rem;
-  line-height: 2.2rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .start-button {
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
   background-color: #ff2800;
-  border: none;
   color: white;
+  font-size: 1.8rem;
   font-weight: bold;
   border-radius: 30px;
-  font-size: 1.5rem;
+  border: none;
   cursor: pointer;
 }
 
